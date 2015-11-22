@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <script src="shared/jquery.js" type="text/javascript"></script>
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="shared/shiny.css"/> 
+</head>
+ 
+<body>
+<div id="wrapper">
+<div id="head">
+	<div id="logo"><img src="images/erasmusmc.jpg"></div>
+	<div id="logoMED"><img src="images/medICTlogo.png"/></div> 
+</div>
+<div id="navbar">
+	<ul id="menu">
+  <li><a href="index.html">Index</a></li>
+  <li><a href="info.html">Information</a>
+    <ul>
+    <li><a href="http://www.erasmusmc.nl/perskamer/archief/2013/4030466/?lang=en" target="_blank">Erasmus MC</a></li>
+    <li><a href="http://www.who.int/apoc/en/index.html" target="_blank">APOC</a></li>
+    <li><a href="aspect.html">Aspects</a></li>
+    </ul>
+  </li>
+  <li><a href="simulation.html">Simulation</a>
+    <ul>
+    <li><a href="input.html">Inputs</a></li>
+    <li><a href="output.html">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="http://www.erasmusmc.nl/overerasmusmc/bereikbaarheid/?lang=en" target="_blank">Contact</a>
+  </li>
+  <li><a href="med.html">MED-ICT</a>
+  </li>
+</ul>
+</div>
+<div id="content">
+  <h1>River Blindness</h1>
+  <h2>Onchocerciasis</h2>
+ 	<table border="0" bordercolor="#000000" cellpadding="0" cellspacing="0" width="100%">
+ 	<tr>
+    <td style="vertical-align: top">
+  <p>
+      <label>Variance in fly bit exposure:</label><br />
+        <select name="Alpha">
+          <option value="0.29">0.29</option>
+          <option value="0.5">0.50</option>
+          <option value="1">1.00</option>
+        </select> 
+  	</p>
+    <p>
+  <label>Percentage Line:</label><br />
+    <select name="Line">
+      <option value="90">90%</option>
+      <option value="95">95%</option>
+      <option value="99">99%</option>
+    </select> 
+  </p>
+  </td>
+  <td style="vertical-align:top">
+  
+  <p>
+  <label>Pre-control CMFL:</label><br />
+    <select name="Rbr">
+      <option value="5">5 mf/ss</option>
+      <option value="10">10 mf/ss</option>
+      <option value="30">30 mf/ss</option>
+      <option value="55">55 mf/ss</option>
+      <option value="80">80 mf/ss</option>
+    </select> 
+  </p>
+  <p>
+  <label>Ivermectin assumption:</label><br />
+    <select name="IVMset">
+      <option value="1">IVM assumption set 1</option>
+      <option value="2">IVM assumption set 2</option>
+    </select> 
+  </p>
+  </td>
+  <td style="vertical-align:top">
+  <p>
+ 	<label>Pastrounds:</label><br /> 
+    <input type="number" name="Pastrounds" value="0" min="0" max="14" />
+	</p>
+  <p>
+  <label>Coverage:</label><br />
+    <select name="Coverage">
+      <option value="Coverage 50% (past) & 50% (future)">Coverage 50% (past) & 50% (future)</option>
+      <option value="Coverage 50% (past) & 65% (future)">Coverage 50% (past) & 65% (future)</option>
+      <option value="Coverage 65% (past) & 50% (future)">Coverage 65% (past) & 50% (future)</option>
+      <option value="Coverage 65% (past) & 65% (future)">Coverage 65% (past) & 65% (future)</option>
+      <option value="Coverage 65% (past) & 80% (future)">Coverage 65% (past) & 80% (future)</option>
+      <option value="Coverage 80% (past) & 65% (future)">Coverage 80% (past) & 65% (future)</option>
+      <option value="Coverage 80% (past) & 80% (future)">Coverage 80% (past) & 80% (future)</option>
+    </select> 
+  </p>
+  </td>
+  </tr>
+
+    <div style=" width:300px; float:left;"  id="leg">  <table width="20" border="1" >
+  <tr>
+    <td>
+         
+          <table width="279" cellspacing="5" cellpadding="5">
+  <tr>
+     <td width="172">Future annual treatment:</td>
+    <td width="72" style="color:#F00">---------</td>
+  </tr>
+  <tr>
+    <td width="172">Future semiannual treatment</td>
+    <td width="72" style ="color:#00FF00">---------</td>
+    
+  </tr>
+  <tr>
+     <td width="172">Future quarterly treatment</td>
+    <td width="72" style = "color:#000000">---------</td>
+    
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</div>
+
+  <tr>
+	<td style="vertical-align: top" colspan="3">
+    
+    	<pre id="summary" class="shiny-text-output"></pre> 
+  
+  		<div id="second_plot" class="shiny-plot-output" style="width: 100%; height: 400px"></div> 
+  
+  		<div id="table" class="shiny-html-output"></div>
+    </td>
+   </tr>
+    </table>
+    </div>
+</div>
+</body>
+</html>

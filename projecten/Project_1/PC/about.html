@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Bioscoop Filmpje</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Het bioscoop Filmpje. Op deze website vind je informatie over alle laatste films, actuele filmagenda en je kunt ook een kaartje reserveren voor een film." />
+<meta name="keywords" content="Filmpje, bioscoop, film, Rotterdam, West-Kruiskade, agenda, filmagenda, bioscoop agenda, filmfocus, filmtheater, arthouse, events, uitgaan, belbios, nederland bioscoop agenda, nederland bioscoop, films, kaartje, reserveren, reserveren film, top films, top 5 films, dreamweb, korting film, voordelig, verwachte films, premiere, imax, kinderfilms, 3d, film info"/>
+<meta name="author" content="DreamWeb"/>
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<link rel="stylesheet" href="css/dialog.css" media="screen" />
+<link rel="stylesheet" href="css/example-variants.css" media="screen" />
+<link rel="shortcut icon" href="images/layout/favicon.ico" />
+<script type="text/javascript"
+    src="script/google.js">
+</script>
+<style type="text/css">
+  html { height: 1500px; }
+  body { height: 100%; margin: 0; padding-top:8px;}
+  #map_canvas { top:-300px;height: 30%; width:90%;margin:auto;  margin-bz-index:1;}
+</style>
+
+
+<!--Googlemaps-->
+<script type="text/javascript">
+var stockholm = new google.maps.LatLng(51.92099971970850, 4.470386119708499);
+var parliament = new google.maps.LatLng(51.92055868029150, 4.469994080291503);
+var marker;
+var map;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: stockholm
+  };
+
+  map = new google.maps.Map(document.getElementById("map_canvas"),
+      mapOptions);
+
+  marker = new google.maps.Marker({
+    map:map,
+    draggable:false,
+    animation: google.maps.Animation.DROP,
+    position: parliament
+  });
+  google.maps.event.addListener(marker, 'click', toggleBounce);
+}
+
+function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+ 
+</script>
+<!--Script voor Navigation bar-->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="initialize()" "MM_preloadImages('images/NavBar/NavOver_01.jpg','images/NavBar/NavOver_02.jpg','images/NavBar/NavOver_03.jpg','images/NavBar/NavOver_04.jpg','images/NavBar/NavOver_05.jpg','images/NavBar/NavOver_06.jpg')">
+
+
+<div id= "wrapper" >
+<div id="banner">
+<a href="index.html"> <img src="images/layout/Banner3.jpg"width="904"; height="300px"; > </a>
+</div>
+<div id="Navbar">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','images/NavBar/NavOver_01.jpg',1)"><img src="images/NavBar/NavBar_01.jpg" name="Home" width="150" height="50" border="0" id="Home" /></a><a href="agenda.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Agenda','','images/NavBar/NavOver_02.jpg',1)"><img src="images/NavBar/NavBar_02.jpg" name="Agenda" width="150" height="50" border="0" id="Agenda" /></a><a href="films.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Films','','images/NavBar/NavOver_03.jpg',1)"><img src="images/NavBar/NavBar_03.jpg" name="Films" width="150" height="50" border="0" id="Films" /></a><a href="verwacht.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Verwacht','','images/NavBar/NavOver_04.jpg',1)"><img src="images/NavBar/NavBar_04.jpg" name="Verwacht" width="150" height="50" border="0" id="Verwacht" /></a><a href="about.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('About','','images/NavBar/NavOver_05.jpg',1)"><img src="images/NavBar/NavOver_05.jpg" name="About" width="150" height="50" border="0" id="About" /></a><a href="contact.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Contact','','images/NavBar/NavOver_06.jpg',1)"><img src="images/NavBar/NavBar_06.jpg" name="Contact" width="150" height="50" border="0" id="Contact" /></a>
+</div>
+
+
+	<br>
+ 
+
+
+<!--Onze missie-->
+<div class="dialog type2 drip" style="position: relative; margin-left: 100px; top: 50px;width: 350px; height: 250px;">
+ <div class="content">
+  <div class="wrapper">
+   <div class="t"></div>
+   <div class="hd">
+    <h1>Onze <em>missie</em> </h1><hr style="margin-left: 5px;">
+   </div>
+   <div class="bd">
+    <p>Het Filmpje staat voor top filmentertainment met een commitment aan hoge standaarden in service en technologie. Wij bieden het best bioscoopervaring voor onze klanten.</p>
+   </div>
+   <div class="ft">
+    <p></p>
+   </div>
+  </div>
+ </div>
+ <div class="b"><div></div></div>
+</div>
+
+
+<!--Onze visie-->
+<div class="dialog type2 drip" style="position: relative; margin-left: 510px; top: -208px;width: 350px; height: 200px;">
+ <div class="content">
+  <div class="wrapper">
+   <div class="t"></div>
+   <div class="hd">
+     <h1>Onze <em>visie </em></h1><hr style="margin-left: 5px;">
+   </div>
+   <div class="bd">
+    <p>Wij hebben als doel om nummer een bioscoop in heel Nederland worden. Verder willen wij in 2017 tien bioscopen in heel Nederland bezitten.<br><br> </p>
+   </div>
+   <div class="ft">
+    <p></p>
+   </div>
+  </div>
+ </div>
+ <div class="b"><div></div></div>
+</div>
+
+<!--Adress-->
+<div class="dialog type2 drip" style="position: relative; margin-left: 100px; top: -150px; width: 350px; height: 250px;">
+ <div class="content">
+  <div class="wrapper">
+   <div class="t"></div>
+   <div class="hd">
+    <h1>Ons <em>adres</em> </h1><hr style="margin-left: 5px;">
+   </div>
+   <div class="bd">
+  			<table  cellpadding="10" border="0" cellspacing="0" >
+			<tr>
+			<td>West-Kruiskade 26</td>
+			</tr>
+			<tr>
+			<td>3014 Rotterdam</td>
+			</tr>
+			</table>
+			<br><br>
+   </div>
+   <div class="ft">
+    <p></p>
+   </div>
+  </div>
+ </div>
+ <div class="b"><div></div></div>
+</div>
+
+<!--Openingstijden-->
+<div class="dialog type2 drip" style="position: relative; margin-left: 510px; top:-408px; width: 350px; height: 200px;">
+ <div class="content">
+  <div class="wrapper">
+   <div class="t"></div>
+   <div class="hd">
+    <h1>Ons <em>openingstijden </em></h1><hr style="margin-left: 5px;">
+   </div>
+   <div class="bd">
+    		 <table  cellpadding="10" border="0" cellspacing="0" >
+			<tr>
+			<td>Maandag t/m donderdag</td><td>09:00 - 24:00</td>
+			</tr>
+			<tr>
+			<td>Vrijdag en zaterdag</td><td>09:00 - 24:00</td>
+			</tr>
+			<tr>
+			<td>Zondag</td><td>09:00 - 24:00</td>
+			</tr>
+			</table>
+   </div>
+   <div class="ft">
+    <p></p>
+   </div>
+  </div>
+ </div>
+ <div class="b"><div></div></div>
+</div>
+<div id="map_canvas"></div>
+
+ </div> <!--Wrapper-->	 
+  <hr id="bl"><div align="center" id="copy"><small> &copy;2011 Filmpje</small></div>
+</body>
+</html>

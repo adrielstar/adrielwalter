@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Bioscoop Filmpje</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Het bioscoop Filmpje. Op deze website vind je informatie over alle laatste films, actuele filmagenda en je kunt ook een kaartje reserveren voor een film." />
+<meta name="keywords" content="Filmpje, bioscoop, film, Rotterdam, West-Kruiskade, agenda, filmagenda, bioscoop agenda, filmfocus, filmtheater, arthouse, events, uitgaan, belbios, nederland bioscoop agenda, nederland bioscoop, films, kaartje, reserveren, reserveren film, top films, top 5 films, dreamweb, korting film, voordelig, verwachte films, premiere, imax, kinderfilms, 3d, film info"/>
+<meta name="author" content="DreamWeb"/>
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<title>Untitled Document</title>
+
+<!--Script voor Navigation bar-->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<script type="text/javascript" src="script/overlib.js"></script>
+</head>
+
+<body onload="MM_preloadImages('images/NavBar/NavOver_01.jpg','images/NavBar/NavOver_02.jpg','images/NavBar/NavOver_03.jpg','images/NavBar/NavOver_04.jpg','images/NavBar/NavOver_05.jpg','images/NavBar/NavOver_06.jpg')">
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+
+<div id= "wrapper" style="height:1310px;">
+<div id="banner">
+<a href="index.html"> <img src="images/layout/Banner3.jpg"width="904"; height="300px"; > </a>
+</div>
+<div id="Navbar">
+<a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','images/NavBar/NavOver_01.jpg',1)"><img src="images/NavBar/NavOver_01.jpg" name="Home" width="150" height="50" border="0" id="Home" /></a><a href="agenda.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Agenda','','images/NavBar/NavOver_02.jpg',1)"><img src="images/NavBar/NavBar_02.jpg" name="Agenda" width="150" height="50" border="0" id="Agenda" /></a><a href="films.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Films','','images/NavBar/NavOver_03.jpg',1)"><img src="images/NavBar/NavBar_03.jpg" name="Films" width="150" height="50" border="0" id="Films" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Verwacht','','images/NavBar/NavOver_04.jpg',1)"><img src="images/NavBar/NavBar_04.jpg" name="Verwacht" width="150" height="50" border="0" id="Verwacht" /></a><a href="about.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('About','','images/NavBar/NavOver_05.jpg',1)"><img src="images/NavBar/NavBar_05.jpg" name="About" width="150" height="50" border="0" id="About" /></a><a href="contact.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Contact','','images/NavBar/NavOver_06.jpg',1)"><img src="images/NavBar/NavBar_06.jpg" name="Contact" width="150" height="50" border="0" id="Contact" /></a>
+</div>
+<br>
+
+
+
+
+
+
+
+<div align="center">
+<font face="Arial, Helvetica, Sans Serif" size="3" color="white"<b>
+<span id="clock">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+function getthedate(){
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var hours=mydate.getHours()
+var minutes=mydate.getMinutes()
+var seconds=mydate.getSeconds()
+var dn="AM"
+if (hours>=12)
+dn="PM"
+if (hours>12){
+hours=hours-12
+}
+{
+ d = new Date();
+ Time24H = new Date();
+ Time24H.setTime(d.getTime() + (d.getTimezoneOffset()*60000) + 3600000);
+ InternetTime = Math.round((Time24H.getHours()*60+Time24H.getMinutes()) / 1.44);
+ if (InternetTime < 10) InternetTime = '00'+InternetTime;
+ else if (InternetTime < 100) InternetTime = '0'+InternetTime;
+}
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+//change font size here
+var cdate=dayarray[day]+", "+montharray[month]+" "+daym+" "+year+" | "+hours+":"+minutes+":"+seconds+" "+dn+" | @"+InternetTime+""
+if (document.all)
+document.all.clock.innerHTML=cdate
+else if (document.getElementById)
+document.getElementById("clock").innerHTML=cdate
+else
+document.write(cdate)
+}
+if (!document.all&&!document.getElementById)
+getthedate()
+function goforit(){
+if (document.all||document.getElementById)
+setInterval("getthedate()",1000)
+}
+window.onload=goforit
+</script>
+
+</span>
+</b>
+</font>
+</div>
+
+
+
+ 
+ 
+ <
+
+
+<div id=prijzen>	
+<table align="left" class="tab1">
+	<tr>	<th></th><th><u>Prijzen</u></th>													</tr>
+	<tr>	<td><img src="images/layout/vip.png"></td>		<td>VIP</td>		<td>€ 15.00</td>	</tr>
+	<tr>	<td><img src="images/layout/high.png">	</td>	<td>High class</td> <td>€ 12.50</td> 	</tr>
+	<tr>	<td><img src="images/layout/Normaal.png"></td>	<td>Normaal</td>	<td>€ 10.00</td>	</tr>
+	
+	
+</table>
+</div>
+
+<div id="seats2">
+	<table align="center" class="tab1">
+		<tr>
+			<th> 19</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td width="20"><img src="images/layout/Normaal.png"></td> 	<td width="20"><img src="images/layout/Normaal.png"></td>	<td></td>	<td width="20"><img src="images/layout/Normaal.png"></td> 	<td width="20"><img src="images/layout/Normaal.png"></td> 
+			<td width="20"><img src="images/layout/Normaal.png"></td> 	<td width="20"><img src="images/layout/Normaal.png"></td> 	<td width="20"><img src="images/layout/Normaal.png"></td> 	
+			<td width="20"><img src="images/layout/Normaal.png"></td>
+            <td></td>	<td width="20"><img src="images/layout/Normaal.png"></td> 	<td width="20"><img src="images/layout/Normaal.png"></td> 	<td width="20"><img src="images/layout/Normaal.png"></td> 
+			<td width="20"><img src="images/layout/Normaal.png"></td> 	<td width="20"><img src="images/layout/Normaal.png"></td> 	<td></td>		
+			<td></td> 	
+		</tr>
+		<tr>
+			<th> 18</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td></td>	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td></td>		
+			<td></td> 	
+		</tr>
+		<tr>
+			<th> 17</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td></td>	
+			<td></td> 	
+		</tr>
+			<tr>
+			<th> 16</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> <td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/High.png"></td> <td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>	<td><img src="images/layout/High.png"></td> <td><img src="images/layout/High.png"></td> 
+			<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td></td>	
+			<td></td> 	
+		</tr>
+			<tr>
+			<th> 15</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/high.png"></td>		<td><img src="images/layout/high.png"></td> 	<td><img src="images/layout/High.png"></td> 	
+			<td></td> 	<td><img src="images/layout/high.png"></td> 	<td><img src="images/layout/High.png"></td>		
+			<td><img src="images/layout/Normaal.png"></td> 	
+			<td><img src="images/layout/Normaal.png"></td>		
+			<td><img src="images/layout/Normaal.png"></td> 	
+			<td></td>	
+			<td></td>	
+		</tr>
+		<tr>
+			<th> 14</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/high.png"></td>
+			<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>		<td><img src="images/layout/high.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td></td>	<td><img src="images/layout/High.png"></td> 	
+			<td><img src="images/layout/High.png"></td>		
+			<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td>		
+			<td><img src="images/layout/Normaal.png"></td> 	<td></td>		
+			<td></td>	
+		</tr>
+        
+        
+        
+		<tr>
+			<th> 13</th>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/High.png"></td>
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>	<td></td>	<td><img src="images/layout/high.png"></td> 	<td><img src="images/layout/Vip.png"></td>
+			<td><img src="images/layout/Vip.png"></td> 		<td><img src="images/layout/Vip.png"></td>		<td><img src="images/layout/Vip.png"></td> 		<td><img src="images/layout/High.png"></td>
+			<td></td>	<td><img src="images/layout/High.png"></td> 		<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> 		<td><img src="images/layout/Normaal.png"></td>		
+			<td></td>		
+		</tr>
+		<tr>
+			<th> 12</th>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	 <td><img src="images/layout/High.png"></td>
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>	<td></td>	<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>
+			<td><img src="images/layout/Vip.png"></td> 		<td><img src="images/layout/Vip.png"></td>		<td><img src="images/layout/Vip.png"></td> 		<td><img src="images/layout/Vip.png"></td>
+			<td></td>		<td><img src="images/layout/High.png"></td> 		<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> 		<td><img src="images/layout/Normaal.png"></td>		
+			<td></td>		
+		</tr>
+		<tr>
+			<th> 11</th>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/high.png"></td>	<td></td>	<td><img src="images/layout/Vip.png"></td>		<td><img src="images/layout/Vip.png"></td>
+			<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>		<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>
+			<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>		
+			<td></td>		
+		</tr>
+		<tr>
+			<th> 10</th>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>
+			<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>		<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>
+			<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>		
+			<td></td>	
+		</tr>
+		<tr>
+			<th> 9</th>
+			<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td> 
+			<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>		<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td> 	
+			<td></td>  	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/High.png"></td> 	
+			<td><img src="images/layout/High.png"></td>		<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	
+			<td></td>	
+		</tr>
+        
+        
+        
+        
+		<tr>
+			<th> 8</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> <td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/High.png"></td> <td><img src="images/layout/Vip.png"></td> 
+			<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td>	<td><img src="images/layout/Vip.png"></td> <td><img src="images/layout/High.png"></td> 
+			<td></td>	<td><img src="images/layout/High.png"></td>	<td><img src="images/layout/High.png"></td> <td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td></td> 
+			<td></td> 	
+		</tr>
+		<tr>
+			<th> 7</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> <td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/Vip.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td></td>	
+			<td></td> 	
+		</tr>
+		<tr>
+			<th>6</th>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/High.png"></td>	<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td></td>		
+			<td></td> 	
+		</tr>
+		<tr>
+			<th>5</th>
+			<td></td> 	<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td></td>	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td></td> 	<td></td>		
+			<td></td> 	
+		</tr>
+		<tr>
+			<th>4</th>
+			<td></td> 	<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td></td>	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 
+			<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td> 	<td><img src="images/layout/High.png"></td>
+			<td></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td> 	<td></td> 	<td></td>		
+			<td></td> 	
+		</tr>
+		<tr>
+			<th> 3</th>
+			<td></td>	<td></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td> <td></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	<td><img src="images/layout/Normaal.png"></td>	
+		<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td>		<td></td>
+		<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>
+        <td><img src="images/layout/Normaal.png"></td> 	<td></td> 	<td></td>		
+        <td></td> 	
+        </tr>
+		<tr>
+			<th>2</th>
+			<td></td> 	<td></td>	<td></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td> <td></td>	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td></td>	<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> 
+			<td></td>		<td></td> 	<td></td>		
+			<td></td>	
+		</tr>
+		<tr>
+		<th> 1</th>
+		<td></td> 	<td></td>	<td></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>	<td></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> 	<td><img src="images/layout/Normaal.png"></td>
+			<td><img src="images/layout/Normaal.png"></td>		<td></td> 	<td><img src="images/layout/Normaal.png"></td>		<td><img src="images/layout/Normaal.png"></td> 
+			<td><img src="images/layout/Normaal.png"></td>		<td></td> 	<td></td>		
+			<td></td>	
+		</tr>
+        
+		
+		<tr><td></td>	<th>1</th>	<th>2</th>	<th>3</th>	<th>4</th>	<th>5</th>	<th>6</th> <th></th>	<th>7</th>	<th>8</th>	<th>9</th>	<th>10</th>	<th>11</th>	<th>12</th>	<th></th>
+						<th>13</th>	<th>14</th>	<th>15</th>	<th>16</th>	<th>17</th>	<th>18</th>	<th></th>	
+	    </tr>
+
+		
+			
+	</table>
+</div>
+			
+
+
+
+
+
+
+ </div>
+ 
+</body>
+</html>

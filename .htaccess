@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+
+# No rewriting
+RewriteRule ^(.*)$ - [PT,L]
+
+# Rewrite to index.php/URL
+RewriteRule ^(.*)$ index.php/$1 [PT,L]
+
+#### Rule for Error Page - 404 ####
+ErrorDocument 404 http://adrielwalter.ga/404.php
+
+
+</IfModule>

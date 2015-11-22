@@ -1,0 +1,131 @@
+body{background:#000000 url(../images/layout/Curtains.jpg) no-repeat top; background-attachment:fixed;}
+
+/*Navigation bars*/
+#Navbar 		{height: 50px; width: 900px; margin-right: auto; margin-left: auto ;border: 2px solid #000;}
+#WeekBar	{height: 38px; width: 900px; margin-right: auto; margin-left: auto;}
+#FilmBar 	{height: 38px; width: 900px; margin-right: auto; margin-left: auto;}
+#wrapper 	{ width: 904px; height: 100% ; margin: 0 auto; border: solid 8px #424242; color: black; background: #000000 ;overflow:hidden;}
+#content     	{ display: inline; float: left; width: 600px; margin: 0 0 15px 30px; position:absolute; top:-430px; background-color: #000000; overflow: auto;}
+#bl 			{width: 912px;margin:2px auto 10px auto;}
+#copy 		{ margin-left: auto;font-family: "Calibri",Georgia,Serif; color:white; margin-left:10px;margin-right:10px;}
+/* headings  */
+h1, h2, h3, h4, h5, h6  { margin: 10px 0 5px; font-size: 1em; font-family:"Calibri",Georgia,Serif;}
+h1                      { font-size: 2em; font-weight: normal; color:"#424242";}
+h2                      { font-size: 1.5em; font-weight: normal; color:"#424242";}
+h3                      { font-size: 1.25em; }
+
+/*Paragraf*/
+p { font-family: "Calibri",Georgia,Serif; color:white; margin-left:10px;margin-right:10px;}
+#p{background-color: #2e2e2e; border: solid 4px #424242; opacity:0.8; filter:alpha(opacity=40);}
+
+/*Links*/
+a{ font-family: "Calibri",Georgia,Serif; color:#b6b6b6; text-decoration:underline;}
+a:hover{text-decoration:none;}
+
+/*Film flash*/
+#fadeshow1{
+position:absolute;
+left:30px;
+top:px;
+z-index:1
+}
+
+#fadeshow2{
+position:absolute;
+right:-700px;
+top:-265px;
+z-index:1
+}
+
+#fadeshow3{
+position:absolute;
+right:-700px;
+top:-190px;
+z-index:1
+}
+/*Tabelen*/
+
+table { font-family: Calibri, Serif, Georgia; color:white; margin-left:10px;margin-right:10px;}
+td, tr {border: 0}
+th {text-decoration:underline; font-size:18px;  }
+.tab1 {
+
+margin-left: 32px;
+background-color: transparent; font-family:"Calibri",Georgia,Serif; color:white;
+opacity:0.8;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+	}
+
+#tabel1 {
+position:absolute;
+right:px;
+top:-250px;
+z-index:1
+}
+
+#tabel2 {
+position:absolute;
+right:-55px;
+top:-250px;
+z-index:1
+}
+
+
+/*Zoeken*/
+#search {position:relative; float:right; top:20px; color: white; background-color: #000000;margin-right:10px;  }
+input {background-color:#FAFAFA;color:#000000;border:1 white; height:20px;}
+
+/*Bestel*/
+#seats {
+float:left;
+margin-top:200px;
+}
+	
+#prijzen {
+float: right;
+position:relative;
+right:50px;
+top:px;
+}
+
+#film {
+float:left;
+}
+
+
+
+/*Reserveren*/
+a.button { background: url(../images/button.png) no-repeat 0 0; width: 120px; height: 40px; display: block;}
+a.button:hover { background-position: 0 -61px; }
+a.button:active { background-position: 0 -120px; }
+
+/*Submit button*/
+#button {background: url(../images/button.png) no-repeat 0 0; width: 120px; height: 40px; display: block;}
+#button:hover { background-position: 0 -61px; }
+#button:active { background-position: 0 -120px; }
+
+
+/* fancyform styles */
+.demo label{display:block;padding:0.5em;padding-left:32px;background-position:8px center;background-repeat:no-repeat;border:1px solid #252525;clear:both;cursor:pointer;font-family: "Calibri",Georgia,Serif; color:white; margin-left:10px;margin-right:10px;}
+.checked{background-color:#222;background-image:url(../images/layout/chk_on.png);}
+.unchecked{background-color:#1c1c1c;background-image:url(../images/layout/chk_off.png);}
+.selected{background-color:#222;background-image:url(../images/layout/rdo_on.png);}
+.unselected{background-color:#151515;background-image:url(../images/layout/rdo_off.png);}
+.leftcol{float:left;clear:left;width:50%;}
+.rightcol{float:right;clear:right;width:50%;}
+
+/*Correctie van film pagina, voor Firefox*/
+#fp {position:relative; max-height:1000px;width:680px; height:600px;}
+
+#seats2 {
+	float:center;
+	margin-left: 150px;;
+	margin-top:225px;
+}
+	
+#seats3 {
+	float:center;
+	margin-left: 235px;;
+	margin-top:225px;
+}
+

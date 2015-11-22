@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+#head {
+	width:1200px;
+	height:159px;
+	background-color:#FFF;
+}
+#logo {
+	width:1000px;
+	float: left;
+}
+#logoMED {
+}
+
+#content {
+	background-color:#FFF;
+}
+#wrapper {
+    postion: fixed;
+    width: 1200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    z-index: 1;
+	background-color:#FFF;
+}
+#navbar {
+	width:1200px;
+	height:27px;
+	float: left;
+	background-color:#FFF;
+}
+ul {
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
+li ul { display: none; }
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  padding: 5px 15px 5px 15px;
+  background: #0CF;
+  margin-left: 0px;
+  white-space: nowrap;
+}
+ul li a:hover { background: #6CF; }
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+li:hover li {
+  float: none;
+  font-size: 11px;
+}
+li:hover a { background: #6CF; }
+li:hover li a:hover { background: #6CF; }
+h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:32px;
+	color:#003399;
+}
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	margin-bottom:2px; 
+}
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+
+
